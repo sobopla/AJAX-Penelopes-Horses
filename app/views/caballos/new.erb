@@ -1,0 +1,23 @@
+<div id="caballo-info">
+  <h2>Create your new Caballo!</h2>
+  <div class="errors">
+    <% if @errors %>
+      <%= @errors %>
+    <% end %>
+  </div>
+
+  <form id="caballo-form" method="post" action="/caballos">
+
+    <label for="caballo[name]">Name</label>
+    <input type="text" name="caballo[name]" value="<%= @caballo.name %>">
+
+    <label for="caballo[name]">Age</label>
+    <input type="text" name="caballo[age]" value="<%= @caballo.age %>">
+
+    <label for="caballo[name]">Breed</label>
+    <input type="text" name="caballo[breed]" value="<%= @caballo.breed %>">
+    <input type="submit" value="CREATE">
+
+  </form>
+
+</div>
