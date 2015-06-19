@@ -1,4 +1,3 @@
-# my index route for showing all caballos
 get '/caballos' do
   @caballos = Caballo.all
   erb :"/caballos/index"

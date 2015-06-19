@@ -4,7 +4,7 @@ In this challenge, you will need to display your AJAX skills by AJAXing a few pa
 
 ### Release 0
 
-Within the `application.js` file, write with your own words what AJAX is and a brief overview of how we make an AJAX call. This doesn't need to be perfect by any means, just explain your level of understanding of AJAX.
+Within the `application.js` file, write with your **own** words what AJAX is and a brief overview of how to make an AJAX call. This doesn't need to be perfect by any means, just explain your level of understanding of AJAX.
 
 ### Release 1
 
