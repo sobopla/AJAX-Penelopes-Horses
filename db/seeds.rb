@@ -1,4 +1,4 @@
-Horse.destroy_all
+Horse.delete_all
 
 Horse.create!(name: 'Penelope', breed: "Arabian", age: 15)
 Horse.create!(name: 'Pepe', breed: "Thoroughbred", age: 25)
