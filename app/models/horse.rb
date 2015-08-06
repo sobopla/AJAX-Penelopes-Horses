@@ -1,4 +1,4 @@
-class Caballo < ActiveRecord::Base
+class Horse < ActiveRecord::Base
 
   validates :name, presence: true
   validates :age, presence: true

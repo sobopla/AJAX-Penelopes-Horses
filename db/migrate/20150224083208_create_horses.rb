@@ -1,6 +1,6 @@
-class CreateCaballos < ActiveRecord::Migration
+class CreateHorses < ActiveRecord::Migration
   def change
-    create_table :caballos do |t|
+    create_table :horses do |t|
       t.string :name
       t.string :breed
       t.integer :age
