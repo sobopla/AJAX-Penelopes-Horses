@@ -1,3 +1,3 @@
 get '/' do
-  redirect '/caballos'
+  redirect '/horses'
 end
