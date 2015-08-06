@@ -9,16 +9,15 @@ get '/horses/new' do
 end
 
 post '/horses' do
-  horse = Horse.create(params[:horse])
-  if horse.valid?
+  @horse = Horse.create(params[:horse])
+  if @horse.valid?
     redirect '/horses'
   else
-    @errors = "All fields must be present. Try again."
     erb :"/horses/new"
   end
 end
 
 get '/horses/:id' do
-  horse = Horse.find(params[:id])
+  @horse = Horse.find(params[:id])
   erb :"/horses/show"
 end
