@@ -1,7 +1,7 @@
 <h2>Mis Caballos</h2>
 <div id='caballo-list'>
   <% @caballos.each do |caballo| %>
-    <div id="caballo">
+    <div id="caballo<%=caballo.id%>">
      <h3><a href="/caballos/<%= caballo.id%>"><%= caballo.name %></a></h3>
     </div>
   <% end %>
