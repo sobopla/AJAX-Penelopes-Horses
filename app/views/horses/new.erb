@@ -1,8 +1,10 @@
 <div id="caballo-info">
   <h2>Create your new Horse!</h2>
   <div class="errors">
-    <% if @errors %>
-      <%= @errors %>
+    <% if @horse.errors %>
+      <% @horse.errors.full_messages.each do |error| %>
+        <ul><%= error %></ul>
+      <% end %>
     <% end %>
   </div>
 
