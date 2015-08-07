@@ -1,6 +1,6 @@
 ## AJAX Sinatra Challenge
 
-In this challenge, you will need to display your AJAX skills by AJAXing a few parts of an existing application. This is a lovely application that keeps track of Penelope's caballos (aka horses).
+In this challenge, you will need to display your AJAX skills by AJAXing a few parts of an existing application. This is a lovely application that keeps track of Penelope's horses.
 
 ### Release 0
 
@@ -8,27 +8,27 @@ Within the `application.js` file, write with your **own** words what AJAX is and
 
 ### Release 1
 
-Go ahead and create, migrate, and seed your database prior to taking a look around at this **very** complex application. We don't want to change any of the functionality, we only want to enhance the user's experience by implementing some AJAX calls (Penelope doesn't want to wait to view the details of her Caballo's). **Add any id's, classes, or partials you need to complete the requirements.**
+Go ahead and create, migrate, and seed your database prior to taking a look around at this **very** complex application. We don't want to change any of the functionality, we only want to enhance the user's experience by implementing some AJAX calls (Penelope doesn't want to wait to view the details of her Horse's). **Add any id's, classes, or partials you need to complete the requirements.**
 
-First, AJAX the rendering of the form that's used to create a new caballo so that it is dynamically loaded. For example, after clicking the "Create a new caballo" link, the following should appear:
+First, AJAX the rendering of the form that's used to create a new horse so that it is dynamically loaded. For example, after clicking the "Create a new horse" link, the following should appear:
 
-![Caballo Form](http://i.imgur.com/NZbXAWJ.png)
+![Horse Form](http://i.imgur.com/DpLoZD5.png)
 
 ### Release 2
 
-Upon submission of this form that was dynamically added, we want to append the new Caballo to the existing list of caballos, like so:
+Upon submission of this form that was dynamically added, we want to append the new Horse to the existing list of horses, like so:
 
-![Caballo Inputs](http://i.imgur.com/2xVmYe0.png)
+![Horse Inputs](http://i.imgur.com/LVnGaVC.png)
 
-![Append Caballo](http://i.imgur.com/psXbO4N.png)
+![Append Horse](http://i.imgur.com/uT1r91B.png)
 
-Be sure to remove the form after a new Caballo is created.
+Be sure to remove the form after a new Horse is created.
 
 ### Release 3
 
-Penelope isn't satisfied with how fast you've just made your application with cutting out all the refreshes. Lastly, let's AJAX viewing the details of a specific Caballo. When clicking on an individual Caballo, let's have the details of that Caballo appear right beneath that Caballo's name, like so:
+Penelope isn't satisfied with how fast you've just made your application with cutting out all the refreshes. Lastly, let's AJAX viewing the details of a specific Horse. When clicking on an individual Horse, let's have the details of that Horse appear right beneath that Horse's name, like so:
 
-![Caballo Deets](http://i.imgur.com/8jO18Co.png)
+![Horse Deets](http://i.imgur.com/HrHn0Eq.png)
 
 ### Release 4
 
