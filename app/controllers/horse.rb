@@ -9,8 +9,8 @@ get '/horses/new' do
 end
 
 post '/horses' do
-  @horse = Horse.create(params[:horse])
-  if @horse.valid?
+  @horse = Horse.new(params[:horse])
+  if @horse.save
     redirect '/horses'
   else
     erb :"/horses/new"
