@@ -8,7 +8,7 @@ Within the `application.js` file, write with your **own** words what AJAX is and
 
 ### Release 1
 
-Go ahead and create, migrate, and seed your database prior to taking a look around at this **very** complex application. We don't want to change any of the functionality, we only want to enhance the user's experience by implementing some AJAX calls (Penelope doesn't want to wait to view the details of her Horse's). **Add any id's, classes, or partials you need to complete the requirements.**
+Go ahead and create, migrate, and seed your database prior to taking a look around at this rather complex application. We don't want to change any of the functionality, we only want to enhance the user's experience by implementing some AJAX calls (Penelope doesn't want to wait to view the details of her Horse's). **Add any id's, classes, or partials you need to complete the requirements.**
 
 First, AJAX the rendering of the form that's used to create a new horse so that it is dynamically loaded. For example, after clicking the "Create a new horse" link, the following should appear:
 
