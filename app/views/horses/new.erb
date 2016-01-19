@@ -2,9 +2,11 @@
   <h2>Create your new Horse!</h2>
   <div class="errors">
     <% if @horse.errors %>
+      <ul>
       <% @horse.errors.full_messages.each do |error| %>
-        <ul><%= error %></ul>
+        <li><%= error %></li>
       <% end %>
+      </ul>
     <% end %>
   </div>
 
