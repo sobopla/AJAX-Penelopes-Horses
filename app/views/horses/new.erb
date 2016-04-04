@@ -12,14 +12,14 @@
 
   <form id="horse-form" method="post" action="/horses">
 
-    <label for="horse[name]">Name</label>
-    <input type="text" name="horse[name]" value="<%= @horse.name %>">
+    <label for="horse-name">Name</label>
+    <input id="horse-name" type="text" name="horse[name]" value="<%= @horse.name %>">
 
-    <label for="horse[name]">Age</label>
-    <input type="text" name="horse[age]" value="<%= @horse.age %>">
+    <label for="horse-age">Age</label>
+    <input id="horse-age" type="text" name="horse[age]" value="<%= @horse.age %>">
 
-    <label for="horse[name]">Breed</label>
-    <input type="text" name="horse[breed]" value="<%= @horse.breed %>">
+    <label for="horse-breed">Breed</label>
+    <input id="horse-breed" type="text" name="horse[breed]" value="<%= @horse.breed %>">
     <input type="submit" value="CREATE">
 
   </form>
