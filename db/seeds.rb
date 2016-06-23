@@ -1,6 +1,6 @@
 Horse.delete_all
 
-Horse.create!(name: 'Penelope', breed: "Arabian", age: 15)
+Horse.create!(name: 'Patricia', breed: "Arabian", age: 15)
 Horse.create!(name: 'Pepe', breed: "Thoroughbred", age: 25)
 Horse.create!(name: 'Priscilla', breed: "Pony", age: 17)
 Horse.create!(name: 'Paula', breed: "Andalusian", age: 24)
