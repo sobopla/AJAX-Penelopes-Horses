@@ -1,27 +1,27 @@
-<div id="new-horse-form-container">
-  <h2>Create your new Horse!</h2>
-  <div class="errors">
-    <% if @horse.errors %>
-      <ul>
+<h1>Add a Horse</h1>
+
+<% if @horse.errors %>
+  <section class="errors">
+    <ul>
       <% @horse.errors.full_messages.each do |error| %>
         <li><%= error %></li>
       <% end %>
-      </ul>
-    <% end %>
-  </div>
+    </ul>
+  </section>
+<% end %>
 
-  <form id="horse-form" method="post" action="/horses">
 
-    <label for="horse-name">Name</label>
-    <input id="horse-name" type="text" name="horse[name]" value="<%= @horse.name %>">
+<form id="new-horse-form" method="post" action="/horses">
 
-    <label for="horse-age">Age</label>
-    <input id="horse-age" type="text" name="horse[age]" value="<%= @horse.age %>">
+  <label for="horse-name">Name:</label>
+  <input id="horse-name" type="text" name="horse[name]" value="<%= @horse.try(:name) %>">
 
-    <label for="horse-breed">Breed</label>
-    <input id="horse-breed" type="text" name="horse[breed]" value="<%= @horse.breed %>">
-    <input type="submit" value="CREATE">
+  <label for="horse-age">Age:</label>
+  <input id="horse-age" type="text" name="horse[age]" value="<%= @horse.try(:age) %>">
 
-  </form>
+  <label for="horse-breed">Breed:</label>
+  <input id="horse-breed" type="text" name="horse[breed]" value="<%= @horse.try(:breed) %>">
 
-</div>
+  <button type="submit">Submit</button>
+</form>
+

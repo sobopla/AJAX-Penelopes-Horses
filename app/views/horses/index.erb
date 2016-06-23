@@ -1,11 +1,13 @@
-<h2>My Horses</h2>
-<div id='horse-list'>
+<h1>The Herd</h1>
+
+<ul id='horse-list'>
   <% @horses.each do |horse| %>
-    <div id="horse<%=horse.id%>">
-     <h3><a href="/horses/<%= horse.id%>"><%= horse.name %></a></h3>
-    </div>
+    <li>
+      <%= erb :"/horses/_horse_overview", { layout: false, locals: { horse: horse } } %>
+    </li>
   <% end %>
-</div>
+</ul>
 
-<h3><a id="new-horse" href="/horses/new">Create a new horse here</a></h3>
-
+<form method="GET" action="/horses/new">
+  <button type="submit">Create a new horse here</button>
+</form>
