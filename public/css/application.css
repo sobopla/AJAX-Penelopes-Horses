@@ -37,10 +37,6 @@ h2 {
   text-align: center;
 }
 
-th {
-  text-align: left;
-}
-
 label {
   float: left;
   width: 4em;
@@ -55,8 +51,4 @@ input, button {
   margin-top: 10px;
   margin-top: 2em;
 
-}
-
-.caballo-form {
-  margin-top: 50px;
 }
