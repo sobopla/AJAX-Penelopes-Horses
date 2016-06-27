@@ -1,5 +1,15 @@
-<h1><%= @horse.name %></h1>
-<ul>
-  <li>Breed: <%= @horse.breed %></li>
-  <li>Age: <%= @horse.age %></li>
+<h1 class="blue pad-b-1"><%= @horse.name %></h1>
+<ul class="horse-detail-list">
+  <li>
+    <h2>Name</h2>
+    <p><%= @horse.name %></p>
+  </li>
+  <li>
+    <h2>Breed</h2>
+    <p><%= @horse.breed %></p>
+  </li>
+  <li>
+    <h2>Age</h2>
+    <p><%= @horse.age %></p>
+  </li>
 </ul>

@@ -1,6 +1,6 @@
-<h1>Add a Horse</h1>
+<h1 class="blue pad-b-1">Add a Horse</h1>
 
-<% if @horse.errors %>
+<% if @horse.errors.any? %>
   <section class="errors">
     <ul>
       <% @horse.errors.full_messages.each do |error| %>
@@ -12,16 +12,23 @@
 
 
 <form id="new-horse-form" method="post" action="/horses">
+  <div class="input-group">
+    <label>
+      <input id="horse-name" type="text" name="horse[name]" value="<%= @horse.try(:name) %>">
+      <span>Name:</span>
+    </label>
 
-  <label for="horse-name">Name:</label>
-  <input id="horse-name" type="text" name="horse[name]" value="<%= @horse.try(:name) %>">
+    <label>
+      <input id="horse-age" type="text" name="horse[age]" value="<%= @horse.try(:age) %>">
+      <span>Age:</span>
+    </label>
 
-  <label for="horse-age">Age:</label>
-  <input id="horse-age" type="text" name="horse[age]" value="<%= @horse.try(:age) %>">
+    <label>
+      <input id="horse-breed" type="text" name="horse[breed]" value="<%= @horse.try(:breed) %>">
+      <span>Breed:</span>
+    </label>
+  </div>
 
-  <label for="horse-breed">Breed:</label>
-  <input id="horse-breed" type="text" name="horse[breed]" value="<%= @horse.try(:breed) %>">
-
-  <button type="submit">Submit</button>
+  <button type="submit" class="brown-button">Submit</button>
 </form>
 

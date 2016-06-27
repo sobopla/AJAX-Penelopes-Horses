@@ -7,6 +7,14 @@
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -14,41 +22,220 @@ a {
   text-decoration: none;
 }
 
-.container {
-  margin: 20px auto;
-  width: 800px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
-  font-family: 'Crafty Girls', cursive;
-}
+  a:hover {
+    text-decoration: underline;
+  }
 
-.container:after {
-  clear: both;
-  display: table;
-  content: " ";
-}
-
-.errors {
-  display: inline-block;
-  color: #33CCCC;
-}
-
-h2 {
+h1 {
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
   text-align: center;
 }
 
-label {
-  float: left;
-  width: 4em;
-  display: block;
-  margin-left: 2em;
-  margin-top: 2em;
-}
-
-input, button {
-  float: left;
+h2 {
+  padding: 0;
   margin: 0;
-  margin-top: 10px;
-  margin-top: 2em;
-
+  text-align: center;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+button {
+  margin: 3em auto;
+  padding: 2em;
+  width: 100%;
+  max-width: 60%;
+  border-radius: .5em;
+  border: none;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.align-to-sides {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  height: 80vh;
+  max-height: 600px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+  .hero h1 {
+    font-size: 8em;
+  }
+
+.row {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.horse-image {
+  background: black url("/images/horse-background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.errors {
+  color: #ff0000;
+  margin: 1em 0 2em 0;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+  .input-group label {
+    margin: 0;
+    width: 33%;
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid #999;
+    border-radius: 0.25em;
+    overflow: hidden;
+  }
+
+  .input-group label span {
+    flex-grow: 1;
+    padding: .5em;
+    background-color: #eee;
+    border-right: 1px solid #999;
+  }
+
+  .input-group label input {
+    flex-grow: 3;
+    padding: .5em;
+    border: none;
+    outline: none;
+  }
+
+  .input-group label input:focus ~ span {
+    color: #4a8bca;
+  }
+
+
+
+.inline-list {
+  display: flex;
+  align-items: end;
+  list-style-type: none;
+}
+
+  .inline-list li {
+    padding: 0 1em;
+    border-right: 1px solid;
+  }
+
+  .inline-list li:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+
+.horse-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+  .horse-list li {
+    list-style-type: none;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+
+.horse-detail-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+  .horse-detail-list li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.fancy-text {
+  font-family: 'Lobster Two', cursive;
+}
+
+.logo-heading {
+  font-size: 2em;
+}
+
+.pad-b-1 {
+  padding-bottom: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.blue {
+  color: #428bca;
+}
+
+.brown {
+  color: #433629;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.brown-bg {
+  background-color: #433629;
+}
+
+  .brown-bg a {
+    color: white;
+  }
+
+.brown-button {
+  background-color: #433629;
+  color: white;
+}
+
+  .brown-button:hover {
+    background-color: #5f5348;
+  }
