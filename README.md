@@ -42,7 +42,7 @@ Penelope is impressed with our updates, so she's asking us to do more work on th
 
 
 ### Release 3:  Refactor
-Have you added all the required functionality?  Refactor your code. Can you JavaScript be better organized? Also, double check your controller's route handlers.  Is there code well written?  Do they allow for responding to both AJAX and normal HTTP requests?
+Have you added all the required functionality?  Refactor your code. Can your JavaScript be better organized? Also, double check your controller's route handlers.  Is there code well written?  Do they allow for responding to both AJAX and normal HTTP requests?
 
 
 ## Conclusion
