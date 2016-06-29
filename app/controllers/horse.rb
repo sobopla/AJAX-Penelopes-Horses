@@ -1,6 +1,6 @@
 get '/horses' do
   @horses = Horse.all
-  erb :"/horses/index", { layout: :"/landing" }
+  erb :"/horses/index"
 end
 
 get '/horses/new' do
