@@ -1,13 +1,13 @@
-<h1 class="pad-b-1">Meet the Herd</h1>
+<h1 class="big">Meet the Herd</h1>
 
-<ul id='horse-list' class="horse-list">
+<ul class="list">
   <% @horses.each do |horse| %>
-    <li>
-      <%= erb :"/horses/_horse_overview", { layout: false, locals: { horse: horse } } %>
+    <li class="list-item col-1-2">
+      <a class="big fancy-text light-link" href="/horses/<%= horse.id%>"><%= horse.name %></a>
     </li>
   <% end %>
 </ul>
 
-<form method="GET" action="/horses/new">
-  <button type="submit" class="brown-button">Add a Horse</button>
+<form class="flex flex-column" method="GET" action="/horses/new">
+  <button type="submit" class="button dark">Add a Horse</button>
 </form>
