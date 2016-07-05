@@ -150,9 +150,6 @@ form {
   font-family: 'Lobster Two', cursive;
 }
 
-.main-heading {
-}
-
 .button {
   margin: 3em auto;
   padding: 2em;
@@ -166,12 +163,6 @@ form {
   .button:hover {
     opacity: 0.88;
   }
-
-.hidden-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
 
 .input-group {
   padding: 0 .5em;
