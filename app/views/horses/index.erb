@@ -1,11 +1,13 @@
-<h2>My Horses</h2>
-<div id='horse-list'>
+<h1 class="big">Meet the Herd</h1>
+
+<ul class="list">
   <% @horses.each do |horse| %>
-    <div id="horse<%=horse.id%>">
-     <h3><a href="/horses/<%= horse.id%>"><%= horse.name %></a></h3>
-    </div>
+    <li class="list-item col-1-2">
+      <a class="big fancy-text light-link" href="/horses/<%= horse.id%>"><%= horse.name %></a>
+    </li>
   <% end %>
-</div>
+</ul>
 
-<h3><a id="new-horse" href="/horses/new">Create a new horse here</a></h3>
-
+<form class="flex flex-column" method="GET" action="/horses/new">
+  <button type="submit" class="button dark">Add a Horse</button>
+</form>

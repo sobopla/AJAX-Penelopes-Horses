@@ -11,7 +11,7 @@ end
 post '/horses' do
   @horse = Horse.new(params[:horse])
   if @horse.save
-    redirect '/horses'
+    redirect "/horses/#{@horse.id}"
   else
     erb :"/horses/new"
   end

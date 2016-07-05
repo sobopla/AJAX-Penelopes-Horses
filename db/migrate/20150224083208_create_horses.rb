@@ -1,11 +1,11 @@
 class CreateHorses < ActiveRecord::Migration
   def change
     create_table :horses do |t|
-      t.string :name
-      t.string :breed
-      t.integer :age
+      t.string :name,  { null: false }
+      t.string :breed, { null: false }
+      t.integer :age,  { null: false }
 
-      t.timestamps
+      t.timestamps(null: false)
     end
   end
 end
