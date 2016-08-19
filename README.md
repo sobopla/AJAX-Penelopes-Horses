@@ -41,7 +41,11 @@ Penelope is impressed with our updates, so she's asking us to do more work on th
 *Figure 3*.  Showing the details for a horse.
 
 
-### Release 3:  Refactor
+### Release 3:  Graceful Degredation
+When we enhance a site with JavaScript, we want to preserve the functionality of our site for users without JavaScript.  So, if a user has disabled JavaScript, our site should retain its AJAX-less features.  [Use the Chrome Developer Tools to disable JavaScript][disable JS] (Version 51.0.2704.106 shown) and ensure that the site works without it.
+
+
+### Release 4:  Refactor
 Have you added all the required functionality?  Refactor your code. Can your JavaScript be better organized? Also, double check your controller's route handlers.  Is there code well written?  Do they allow for responding to both AJAX and normal HTTP requests?
 
 
@@ -51,7 +55,7 @@ When you're finished, commit your changes, but wait to push your branch to Githu
 Reflect on how the challenge went.  Remember, this challenge is a checkpoint for you to gauge your progress in working with AJAX.  What do you know well?  In what areas do you need to make progress?  
 
 
-
+[disable js]: 
 
 
 
