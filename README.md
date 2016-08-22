@@ -55,7 +55,7 @@ When you're finished, commit your changes, but wait to push your branch to Githu
 Reflect on how the challenge went.  Remember, this challenge is a checkpoint for you to gauge your progress in working with AJAX.  What do you know well?  In what areas do you need to make progress?  
 
 
-[disable js]: 
+[disable js]: readme-assets/disable-javascript.gif
 
 
 
