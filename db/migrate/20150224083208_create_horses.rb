@@ -5,7 +5,7 @@ class CreateHorses < ActiveRecord::Migration[5.0]
       t.string :breed, { null: false }
       t.integer :age,  { null: false }
 
-      t.timestamps(null: false)
+      t.timestamps
     end
   end
 end
