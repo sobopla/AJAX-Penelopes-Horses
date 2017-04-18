@@ -1,4 +1,4 @@
-class Horse < ActiveRecord::Base
+class Horse < ApplicationRecord
 
   validates :name, presence: true
   validates :age, presence: true
