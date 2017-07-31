@@ -15,21 +15,39 @@ $(document).ready(function() {
     })
 	})
 
+// dynamically show the added horse on the page 
 	$(".container-for-add-horse").on("submit", "#new-horse-form", function(event) {
 		event.preventDefault();
 		var form = $(this);
 		$("add_horse_button").show();
 		form.remove();
 		var form_data = form.serialize();
-		
+
 		$.ajax({
 			url: form.attr('action'),
 			type: form.attr('method'),
 			data: form_data
 		})
 		.done(function(response){
+			$(".add_horse_button").show();
 			$(".horse-list").append(response);
 		})
+	})
+
+// dynamically show the horse info when name is clicked
+	$(".list").on("click", "a", function(event){
+		event.preventDefault();
+		horsename = $(this);
+
+		// console.log( $(this).text() );
+
+		$.ajax({
+			url: horsename.attr('href'), 
+		})
+		.done(function(response){
+			horsename.parent().append(response);
+		})
+		
 
 	})
 
