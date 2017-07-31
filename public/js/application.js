@@ -1,6 +1,8 @@
-// Show add horse form when add horse is clicked
+
 
 $(document).ready(function() {
+
+	// GET HORSE HANDLER
 	$(".add_horse_button").submit(function(event) {
 		event.preventDefault();
 		var form = $(this);
@@ -13,9 +15,31 @@ $(document).ready(function() {
     .done(function(response) {
       $(".container-for-add-horse").append(response);
     })
-	})
+	});
 
-// dynamically show the added horse on the page 
+	//JOEL'S
+	// $("#get-horse-form").on("submit", function(event){
+ //        event.preventDefault();
+
+ //        var $form = $(this); 
+ //        if ($form.hasClass("clicked")) {
+ //            $(".new-horse-form-wrapper").toggle();
+ //            $form.hide();
+ //        }
+ //        else {
+ //            $.ajax({
+ //                url: $form.attr('action'),
+ //                method: $form.attr('method') 
+ //            })
+ //            .done(function(response){
+ //                $form.hide();
+ //                $form.addClass('clicked');
+ //                $(".container").append(response);
+ //            });
+ //        }
+ //    });
+
+	// NEW HORSE POST HANDLER 
 	$(".container-for-add-horse").on("submit", "#new-horse-form", function(event) {
 		event.preventDefault();
 		var form = $(this);
@@ -32,14 +56,32 @@ $(document).ready(function() {
 			$(".add_horse_button").show();
 			$(".horse-list").append(response);
 		})
-	})
+	});
 
-// dynamically show the horse info when name is clicked
+	// JOEL'S
+	// $(".container").on("submit", "#new-horse-form", function(event){
+ //        event.preventDefault();
+
+ //        var $form = $(this);
+        
+ //        $.ajax({
+ //            url: $form.attr('action'),
+ //            method: $form.attr('method'),
+ //            data: $form.serialize()
+ //        })
+ //        .done(function(response){
+ //            $form.parent().toggle();
+ //            $form.trigger('reset');
+ //            $("#get-horse-form").show();
+ //            $(".list").append(response);
+ //        });
+ //    });
+
+
+	//SHOW HORSE INFO SPECS HANDLER
 	$(".list").on("click", "a", function(event){
 		event.preventDefault();
 		horsename = $(this);
-
-		// console.log( $(this).text() );
 
 		$.ajax({
 			url: horsename.attr('href'), 
@@ -47,32 +89,30 @@ $(document).ready(function() {
 		.done(function(response){
 			horsename.parent().append(response);
 		})
-		
+	});
 
-	})
+	// JOEL'S
+	// $('.list').on("click", 'a.big.fancy-text.light-link', function(event){
+ //        event.preventDefault();
+
+ //        var $link = $(this);
+
+ //        $(".list .list").hide();
+        
+ //        if ($link.hasClass('clicked')) {
+ //            $link.siblings('.list').toggle();
+ //        }
+ //        else {
+ //            $.ajax({
+ //                url: $link.attr('href'),
+ //                method: 'GET',
+ //            })
+ //            .done(function(response){
+ //                $link.addClass("clicked");
+ //                $link.parent().append(response);
+ //            });
+ //        }
+ //    })
 
 
 });
-// add a horse
-// click submit
-// Show the added horse on the page without reloading
-// hide button on the horse form
-// add horse to horse-list
-
-  // $(".post-container").on("click", ".delete", function(event) {
-  //   event.preventDefault();
-
-  //   var url = $(this).attr("href")
-  //   var deletebutton = $(this)
-  //   $.ajax({
-  //     url: url,
-  //     method: "delete",
-  //   })
-  //   .done(function(response) {
-  //   deletebutton.closest("article").remove()
-  //   })
-  // });
-
-
-
-
