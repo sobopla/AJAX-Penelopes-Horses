@@ -16,7 +16,11 @@ end
 post '/horses' do
   @horse = Horse.new(params[:horse])
   if @horse.save
-    redirect "/horses/#{@horse.id}"
+    if request.xhr?
+      erb :"/horses/_one_horse", locals: {horse: @horse}, layout: false
+    else
+    redirect "/horses"
+    end
   else
     erb :"/horses/new"
   end
